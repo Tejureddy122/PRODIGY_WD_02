@@ -1,0 +1,106 @@
+/* Color palette */
+:root {
+    --primary-color: #aec2cf;
+    --secondary-color: #a5a3a3;
+    --accent-color: #c0645a;
+    --background-color: #fff;
+  }
+  
+  /* Global styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+  }
+  
+  body {
+    background-color: var(--primary-color);
+  }
+  
+  /* Container styles */
+  .container {
+    background-image: url("https://i.ibb.co/Twktg9z/weather2.jpg");
+    background-color: var(--secondary-color);
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    margin-top: 40px;
+    border-radius: 5px;
+  }
+  
+  /* Form styles */
+  .container form {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    align-items: center;
+  }
+  
+  .container form input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  
+  .container form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--accent-color);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+  }
+  
+  .container form input[type="submit"]:hover {
+    background-color: rgb(171, 75, 75);
+  }
+  
+  /* Icon styles */
+  .icon img {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  /* Weather data styles */
+  .temp {
+    font-size: 40px;
+    font-weight: 1000;
+    margin-top: 20px;
+  }
+  
+  .desc {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .details > div {
+    font-size: 18px;
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    min-height: 40px;
+    text-align: center;
+    align-items: center;
+    flex: 1;
+  }
